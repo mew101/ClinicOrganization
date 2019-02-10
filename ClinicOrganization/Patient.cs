@@ -6,20 +6,29 @@ namespace ClinicOrganization
 {
     public class Patient
     {
-     int bloodLevel { get; set; }
-     int healthLevel { get; set; }
+        public int bloodLevel { get; set; } 
+        public int healthLevel { get; set; }
+        int bloodIncrease = 10;
+        int healthIncrease = 10;
+        public const int maxBloodLevel = 160;
+        public const int maxHealthLevel = 100;
 
-        public Patient(int bloodLevel, int healthLevel)
+
+        public Patient()
         {
-            bloodLevel += 20;
-            healthLevel += 10;
+            bloodLevel = 20; 
+            healthLevel = 10;           
         }
-        public void BloodRange()
+        
+        public void DoctorVisit()
         {
-            if (bloodLevel <= 0) { bloodLevel = 0; Console.WriteLine("Patient died!"); }
-            if (bloodLevel > 200) { bloodLevel = 200; Console.WriteLine("Heart attack!"); }
+            bloodLevel += bloodIncrease;
+            if (bloodLevel > maxBloodLevel) bloodLevel = maxBloodLevel;
+            healthLevel += healthIncrease;
+            if (healthLevel > maxHealthLevel) healthLevel = maxHealthLevel;
 
         }
+       
     }
 
 }

@@ -6,6 +6,11 @@ namespace ClinicOrganization
 {
     public class Doctor 
     {
+        string type { get; set; }
 
+        public void DrawBlood()
+        {
+           
+        }
     }
 }
