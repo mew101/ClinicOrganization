@@ -10,28 +10,28 @@ namespace ClinicOrganization
         public string Type { get; set; }
         public int Num { get; set; }
         public int Salary { get; set; }
-        public bool IsPaid = true;
+        public bool Paid { get; set;}
         public int Balance { get; set; }
 
-        public Employee(string type, string name, int num, int salary)
+        public Employee(string type, string nam, int num, int sal, bool paid)
         {
             Type = type;
-            Name = name;
+            Name = nam;
             Num = num;
-            Salary = salary;
+            Salary = sal;
+            Paid = paid;
         }
         public Employee()
         {
 
         }
+
         public virtual void PayEmployee()
         {
-            Balance = 0;
+            Paid = true;
         }
-        public virtual void DisplayEmployeeInfo()
-        {
-            Console.WriteLine(Type + " " + Name + " is employee " + Num + " and gets paid " + Salary );
-        }
+       
+       
 
     }
 

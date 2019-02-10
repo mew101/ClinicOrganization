@@ -10,9 +10,9 @@ namespace ClinicOrganization.Tests
         {
             var employee = new Employee();
 
-            employee.IsPaid = true;
+            employee.Paid = true;
 
-            Assert.True(employee.IsPaid);
+            Assert.True(employee.Paid);
         }
 
         

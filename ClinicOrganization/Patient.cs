@@ -6,8 +6,9 @@ namespace ClinicOrganization
 {
     public class Patient
     {
-        public int bloodLevel { get; set; } 
-        public int healthLevel { get; set; }
+        public int patientNum { get; set; }
+        public int bloodLevel { get; private set; } 
+        public int healthLevel { get; private set; }
         int docBloodIncrease = 20;
         int docHealthIncrease = 10;
         int nursBloodIncrease = 10;
@@ -16,12 +17,13 @@ namespace ClinicOrganization
         public const int maxHealthLevel = 100;
 
 
-        public Patient()
+        public Patient(int patientNum)
         {
+            patientNum = 1; 
             bloodLevel = 20; 
             healthLevel = 10;           
         }
-        
+
         public void DoctorVisit()
         {
             bloodLevel += docBloodIncrease;
@@ -37,6 +39,7 @@ namespace ClinicOrganization
             healthLevel += nursHealthIncrease;
             if (healthLevel > maxHealthLevel) healthLevel = maxHealthLevel;
         }
+        
     }
 
 }
