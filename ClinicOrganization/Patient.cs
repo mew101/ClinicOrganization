@@ -4,8 +4,7 @@ using System.Text;
 
 namespace ClinicOrganization
 {
-    public class Doctor 
+    class Patient
     {
-
     }
 }

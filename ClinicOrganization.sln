@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicOrganization", "ClinicOrganization\ClinicOrganization.csproj", "{5AA32356-EA94-4350-8CA5-E2E2FA8D0EAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicOrganization", "ClinicOrganization\ClinicOrganization.csproj", "{5AA32356-EA94-4350-8CA5-E2E2FA8D0EAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicOrganiztion.Tests", "ClinicOrganiztion.Tests\ClinicOrganiztion.Tests.csproj", "{082EBE08-2300-4E26-A3A0-203B5D3BDC84}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicOrganization.Tests", "ClinicOrganization.Tests\ClinicOrganization.Tests.csproj", "{F8E58C88-4E18-4D04-B9A4-7651AAF9F63B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{5AA32356-EA94-4350-8CA5-E2E2FA8D0EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AA32356-EA94-4350-8CA5-E2E2FA8D0EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AA32356-EA94-4350-8CA5-E2E2FA8D0EAD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{082EBE08-2300-4E26-A3A0-203B5D3BDC84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{082EBE08-2300-4E26-A3A0-203B5D3BDC84}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{082EBE08-2300-4E26-A3A0-203B5D3BDC84}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{082EBE08-2300-4E26-A3A0-203B5D3BDC84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8E58C88-4E18-4D04-B9A4-7651AAF9F63B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E58C88-4E18-4D04-B9A4-7651AAF9F63B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E58C88-4E18-4D04-B9A4-7651AAF9F63B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E58C88-4E18-4D04-B9A4-7651AAF9F63B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
