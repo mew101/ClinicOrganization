@@ -14,6 +14,10 @@ namespace ClinicOrganization.Tests
 
             Assert.True(employee.IsPaid);
         }
-        
+
+        [Fact]
+
+
+
     }
 }

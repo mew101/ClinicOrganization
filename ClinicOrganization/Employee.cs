@@ -26,7 +26,7 @@ namespace ClinicOrganization
         }
         public virtual void PayEmployee()
         {
-           
+            Balance = 0;
         }
         public virtual void DisplayEmployeeInfo()
         {
