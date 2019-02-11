@@ -13,6 +13,7 @@ namespace ClinicOrganization
         public Doctor(string specialty, string type, string nam, int num, int sal, bool paid): base(type, nam, num, sal, paid)
         {
             Specialty = specialty;
+            Salary = 90000;
         }
 
         public void ListOfDocs()

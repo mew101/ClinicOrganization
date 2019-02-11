@@ -4,14 +4,16 @@ using System.Text;
 
 namespace ClinicOrganization
 {
-    class Nurse : Employee
+    public class Nurse : Employee
     {
         public List<Nurse> NursList { get; set; }
         public int Patients { get; set; }
 
         public Nurse(string type, string nam, int num, int sal, int patients, bool paid) : base(type, nam, num, sal, paid)
         {
-             Patients = patients;
+            Patients = patients;
+            Salary = 50000;
+            
         }
 
         public void ListOfNurses()

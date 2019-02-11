@@ -11,6 +11,7 @@ namespace ClinicOrganization
         public Receptionist(string type, string nam, int num, bool onPhone, int sal, bool paid) : base(type, nam, num, sal, paid)
         {
             OnPhone = false;
+            Salary = 45000;
         }
 
         public void DisplayReceptionistInfo()
