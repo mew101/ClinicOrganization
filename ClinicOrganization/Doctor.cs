@@ -6,7 +6,7 @@ namespace ClinicOrganization
 {
     public class Doctor : Employee
     {
-        string Specialty { get; set; }
+        public string Specialty { get; set; }
         public List<Doctor> DocList { get; set; }
 
 
@@ -19,13 +19,18 @@ namespace ClinicOrganization
         {
             DocList = new List<Doctor>
             {
-                new Doctor("Cardiologist", "Doctor", "Smith", 101, 90000, false),
-                new Doctor("Neurologist", "Doctor", "Jones", 102, 90000, false)
+               // new Doctor("Cardiologist", "Doctor", "Smith", 101, 90000, false),
+               // new Doctor("Neurologist", "Doctor", "Jones", 102, 90000, false)
             };
         }
         public void DisplayDoctorInfo()
         {
-            Console.WriteLine(Specialty + " " + Type + " " + Name + " is" + Num.ToString() + ", gets paid " + Salary.ToString() + " " + Paid);
+            Console.WriteLine(Specialty);
+            Console.WriteLine(Type);
+            Console.WriteLine(Name);
+            Console.WriteLine(Num.ToString());
+            Console.WriteLine(Salary.ToString()); 
+            Console.WriteLine(Convert.ToString(Paid));
         }
 
 

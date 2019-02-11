@@ -1,12 +1,8 @@
 ﻿using System;
 namespace ClinicOrganization
 {
-    public class Program
+    class Program
     {
-        public Program()
-        {
-            Console.WriteLine("hello world!");
-            Console.ReadKey();
-        }
-    }
+
+    }         
 }

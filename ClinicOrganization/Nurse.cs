@@ -22,10 +22,16 @@ namespace ClinicOrganization
                 new Nurse("Nurse", "Brown", 202, 50000, 5, false)
             };
         }
-        public string DisplayNurseInfo()
-        {
-            return (Type + " " + Name + " is employee " + Num.ToString() + ", gets paid " + Salary.ToString() + " has" +  Patients.ToString() + " " + Paid);
+        public void DisplayNurseInfo()
+        {          
+            Console.WriteLine(Type);
+            Console.WriteLine(Name);
+            Console.WriteLine(Num.ToString());
+            Console.WriteLine(Salary.ToString());
+            Console.WriteLine(Patients);
+            Console.WriteLine(Convert.ToString(Paid));
         }
+
 
     }
 }

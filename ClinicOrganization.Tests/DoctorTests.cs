@@ -1,14 +1,20 @@
-using System;
 using Xunit;
+
 
 namespace ClinicOrganization.Tests
 {
+   
     public class DoctorTests
+   
     {
         [Fact]
-        public void Test1()
+        public void DocInfo()
         {
-
+            Doctor doctor = new Doctor("Cardiologist", "Doctor", "Smith", 101, 90000, false);
+            //Assert.Equal("Cardiologist", doctor.Specialty);
+            //Assert.Equal(101, doctor.Num);
+            Assert.Equal(90000, doctor.Salary);
+            
         }
     }
 }
