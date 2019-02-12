@@ -10,10 +10,11 @@ namespace ClinicOrganization
         public List<Doctor> DocList { get; set; }
 
 
-        public Doctor(string specialty, string type, string nam, int num, int sal, bool paid): base(type, nam, num, sal, paid)
+        public Doctor(string specialty, string nam, int num): base("Doctor", nam, num, 90000, false)
         {
+            Type = "doctor";
             Specialty = specialty;
-            Salary = 90000;
+           
         }
 
         public void ListOfDocs()
