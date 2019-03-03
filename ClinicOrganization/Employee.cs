@@ -13,13 +13,13 @@ namespace ClinicOrganization
         public bool Paid { get; set;}
        
 
-        public Employee(string type, string nam, int num, int sal, bool paid)
+        public Employee(string type, string nam, int num, int sal)
         {
             Type = type;
             Name = nam;
             Num = num;
             Salary = sal;
-            Paid = paid;
+           
         }
        
 

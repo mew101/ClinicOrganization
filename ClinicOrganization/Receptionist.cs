@@ -8,7 +8,7 @@ namespace ClinicOrganization
     {
         public bool OnPhone { get; set; }
 
-        public Receptionist(string type, string nam, int num, bool onPhone, int sal, bool paid) : base(type, nam, num, sal, paid)
+        public Receptionist(string type, string nam, int num, bool onPhone, int sal, bool paid) : base(type, nam, num, sal)
         {
             OnPhone = false;
             Salary = 45000;

@@ -10,10 +10,10 @@ namespace ClinicOrganization.Tests
         [Fact]
         public void NurseInfo()
         {
-            Nurse nurse = new Nurse("Nurse", "James", 101, 0, 4, false);
-            Assert.Equal(101, nurse.Num);
-            //Assert.Equal(50000, nurse.Salary);
-
+            Nurse nurse = new Nurse(3);
+            Assert.Equal("Betsy", nurse.Name);
+            Assert.Equal(301, nurse.Num);
+            Assert.Equal(50000, nurse.Salary);
 
         }
     }

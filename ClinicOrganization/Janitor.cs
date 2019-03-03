@@ -9,7 +9,7 @@ namespace ClinicOrganization
     {
         public bool IsSweeping { get; set; }
 
-        public Janitor(string type, string nam, int num, bool isSweeping, int sal, bool paid) : base(type, nam, num, sal, paid)
+        public Janitor(string type, string nam, int num, bool isSweeping, int sal, bool paid) : base(type, nam, num, sal)
         {
             IsSweeping = false;
             Salary = 40000;

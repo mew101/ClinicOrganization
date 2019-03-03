@@ -6,24 +6,15 @@ namespace ClinicOrganization
 {
     public class Nurse : Employee
     {
-        public List<Nurse> NursList { get; set; }
+       
         public int Patients { get; set; }
 
-        public Nurse(string type, string nam, int num, int sal, int patients, bool paid) : base(type, nam, num, sal, paid)
+        public Nurse(int patients) : base("Nurse", "Betsy" , 301, 50000)
         {
-            Patients = patients;
-            Salary = 50000;
-            
+            Patients = 3;       
         }
 
-        public void ListOfNurses()
-        {
-            NursList = new List<Nurse>
-            {
-                new Nurse("Nurse", "Thomson", 201, 50000, 3, false),
-                new Nurse("Nurse", "Brown", 202, 50000, 5, false)
-            };
-        }
+       
         public void DisplayNurseInfo()
         {          
             Console.WriteLine(Type);
@@ -31,7 +22,7 @@ namespace ClinicOrganization
             Console.WriteLine(Num.ToString());
             Console.WriteLine(Salary.ToString());
             Console.WriteLine(Patients);
-            Console.WriteLine(Convert.ToString(Paid));
+           
         }
 
 

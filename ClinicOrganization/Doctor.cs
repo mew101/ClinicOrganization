@@ -8,7 +8,7 @@ namespace ClinicOrganization
     {
         public string Specialty { get; set; }
        
-       public Doctor(string specialty): base("Doctor", "Roberts", 201, 90000, false)
+       public Doctor(string specialty): base("Doctor", "Roberts", 201, 90000)
         {
             Specialty = "Internist";            
         }
@@ -21,7 +21,6 @@ namespace ClinicOrganization
             Console.WriteLine(Name);
             Console.WriteLine(Num.ToString());
             Console.WriteLine(Salary.ToString()); 
-            Console.WriteLine(Convert.ToString(Paid));
         }
 
 
