@@ -10,7 +10,7 @@ namespace ClinicOrganization
         public string Type { get; set; }
         public int Num { get; set; }
         public int Salary { get; set; }
-        public bool Paid { get; set;}
+        //public bool Paid { get; set;}
        
 
         public Employee(string type, string nam, int num, int sal)
@@ -25,7 +25,7 @@ namespace ClinicOrganization
 
         public virtual void PayEmployee()
         {
-            Paid = true;
+            
         }
        
        

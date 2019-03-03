@@ -6,7 +6,7 @@ namespace ClinicOrganization
 {
     public class Receptionist : Employee
     {
-        public bool OnPhone { get; set; }
+        public bool OnPhone { get; set; } = true;
 
         public Receptionist(bool OnPhone) : base("Receptionist", "Jane", 401, 45000)
         {

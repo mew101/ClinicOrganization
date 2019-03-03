@@ -7,12 +7,12 @@ namespace ClinicOrganization
 {
     public class Janitor : Employee
     {
-        public bool IsSweeping { get; set; }
+        public bool IsSweeping { get; set; } = true;
 
-        public Janitor(string type, string nam, int num, bool isSweeping, int sal, bool paid) : base(type, nam, num, sal)
+        public Janitor(bool IsSweeping ) : base("Janitor", "Bob", 501, 40000)
         {
-            IsSweeping = false;
-            Salary = 40000;
+            IsSweeping = true;
+           
         }
 
         public void DisplayJanitorInfo()
@@ -22,7 +22,6 @@ namespace ClinicOrganization
             Console.WriteLine(Num.ToString());
             Console.WriteLine(Convert.ToString(IsSweeping));
             Console.WriteLine(Salary.ToString());
-            Console.WriteLine(Convert.ToString(Paid));
         }
 
     }

@@ -8,7 +8,7 @@ namespace ClinicOrganization.Tests
     public class NurseTests
     {
         [Fact]
-        public void NurseInfo()
+        public void Nurse_Info()
         {
             Nurse nurse = new Nurse(3);
             Assert.Equal("Betsy", nurse.Name);
