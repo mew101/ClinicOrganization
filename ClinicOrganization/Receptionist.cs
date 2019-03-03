@@ -8,10 +8,10 @@ namespace ClinicOrganization
     {
         public bool OnPhone { get; set; }
 
-        public Receptionist(string type, string nam, int num, bool onPhone, int sal, bool paid) : base(type, nam, num, sal)
+        public Receptionist(bool OnPhone) : base("Receptionist", "Jane", 401, 45000)
         {
-            OnPhone = false;
-            Salary = 45000;
+            OnPhone = true;
+           
         }
 
         public void DisplayReceptionistInfo()
@@ -20,8 +20,7 @@ namespace ClinicOrganization
             Console.WriteLine(Name);
             Console.WriteLine(Num.ToString());
             Console.WriteLine(Convert.ToString(OnPhone));
-            Console.WriteLine(Salary.ToString());
-            Console.WriteLine(Convert.ToString(Paid));
+            Console.WriteLine(Salary.ToString());         
         }
     }
 }
