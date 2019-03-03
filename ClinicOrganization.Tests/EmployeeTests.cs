@@ -5,15 +5,13 @@ namespace ClinicOrganization.Tests
 {
     public class EmployeeTests
     {
-      /*  [Fact]
+      [Fact]
         public void Pay_Employee()
         {
-            var employee = new Employee();
-
-            employee.Paid = true;
-
+            var employee = new Employee("Doctor", "Bob", 222, 90000);
+            employee.PayEmployee();
             Assert.True(employee.Paid);
-        }*/
+        }
 
         
 

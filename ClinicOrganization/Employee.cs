@@ -10,23 +10,26 @@ namespace ClinicOrganization
         public string Type { get; set; }
         public int Num { get; set; }
         public int Salary { get; set; }
-        //public bool Paid { get; set;}
+        public bool Paid { get; set; } = false;
        
 
-        public Employee(string type, string nam, int num, int sal)
+        public Employee(string type, string nam, int num, int sal) //bool paid)
         {
             Type = type;
             Name = nam;
             Num = num;
             Salary = sal;
+            //Paid = paid;
            
         }
+        
+        public void PayEmployee()
+        {
+            Paid = true;
+        }
+
        
 
-        public virtual void PayEmployee()
-        {
-            
-        }
        
        
 
