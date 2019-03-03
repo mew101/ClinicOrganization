@@ -7,7 +7,7 @@ namespace ClinicOrganization.Tests
     public class DoctorTests
    
     {
-        [Fact]
+       /* [Fact]
         public void DocInfo()
         {
             Doctor doctor = new Doctor("Cardiologist", "Doctor", "Smith", 101, 60000, false);
@@ -15,6 +15,6 @@ namespace ClinicOrganization.Tests
             //Assert.Equal(101, doctor.Num);
             Assert.Equal(90000, doctor.Salary);
             
-        }
+        }*/
     }
 }

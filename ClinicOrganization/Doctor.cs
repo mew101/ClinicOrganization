@@ -6,25 +6,22 @@ namespace ClinicOrganization
 {
     public class Doctor : Employee
     {
+        public Doctor(string v1, string v2, string v3, int v4, int v5, bool v6)
+        {
+        }
+
         public string Specialty { get; set; }
-        public List<Doctor> DocList { get; set; }
+       
 
 
-        public Doctor(string specialty, string nam, int num): base("Doctor", nam, num, 90000, false)
+       /*public Doctor(string specialty, string nam, int num): base("Doctor", nam, num, 90000, false)
         {
             Type = "doctor";
             Specialty = specialty;
-           
-        }
+            
+        }*/
 
-        public void ListOfDocs()
-        {
-            DocList = new List<Doctor>
-            {
-               // new Doctor("Cardiologist", "Doctor", "Smith", 101, 90000, false),
-               // new Doctor("Neurologist", "Doctor", "Jones", 102, 90000, false)
-            };
-        }
+      
         public void DisplayDoctorInfo()
         {
             Console.WriteLine(Specialty);
