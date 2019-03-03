@@ -5,7 +5,7 @@ namespace ClinicOrganization.Tests
 {
     public class EmployeeTests
     {
-        [Fact]
+      /*  [Fact]
         public void Pay_Employee()
         {
             var employee = new Employee();
@@ -13,7 +13,7 @@ namespace ClinicOrganization.Tests
             employee.Paid = true;
 
             Assert.True(employee.Paid);
-        }
+        }*/
 
         
 

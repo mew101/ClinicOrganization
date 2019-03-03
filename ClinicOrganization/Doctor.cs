@@ -6,20 +6,12 @@ namespace ClinicOrganization
 {
     public class Doctor : Employee
     {
-        public Doctor(string v1, string v2, string v3, int v4, int v5, bool v6)
-        {
-        }
-
         public string Specialty { get; set; }
        
-
-
-       /*public Doctor(string specialty, string nam, int num): base("Doctor", nam, num, 90000, false)
+       public Doctor(string specialty): base("Doctor", "Roberts", 201, 90000, false)
         {
-            Type = "doctor";
-            Specialty = specialty;
-            
-        }*/
+            Specialty = "Internist";            
+        }
 
       
         public void DisplayDoctorInfo()

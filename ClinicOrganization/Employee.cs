@@ -11,7 +11,7 @@ namespace ClinicOrganization
         public int Num { get; set; }
         public int Salary { get; set; }
         public bool Paid { get; set;}
-        public int Balance { get; set; }
+       
 
         public Employee(string type, string nam, int num, int sal, bool paid)
         {
@@ -21,10 +21,7 @@ namespace ClinicOrganization
             Salary = sal;
             Paid = paid;
         }
-        public Employee()
-        {
-
-        }
+       
 
         public virtual void PayEmployee()
         {
