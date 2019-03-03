@@ -30,7 +30,12 @@ namespace ClinicOrganization
             BloodLevel += 10;
             HealthLevel += 5;
         }
-        
+        public void PatientInfo()
+        {
+            Console.WriteLine("Patient Bloodlevel is " + BloodLevel);
+            Console.WriteLine("Patient healthlevel is " + HealthLevel);
+
+        }
     }
 
 }
