@@ -18,18 +18,18 @@ namespace ClinicOrganization
 
                 var patient = new Patient();
 
-                bool gameContinues = true;
+               
                 string userInput;
                 string userResponse;
                 userInput = Console.ReadLine();
+                bool gameContinues = true;
             do
-            {
-               
-                    Console.WriteLine("---Main Menu---");
+            {              
+                    Console.WriteLine("\n---Main Menu---");
                     Console.WriteLine("Press 1 for list of employees and status");
                     Console.WriteLine("Press 2 for patient status");
                     Console.WriteLine("Press 3 to pay all employess");
-                    Console.WriteLine("4 to Exit\n"); 
+                    Console.WriteLine("Press 4 to Exit\n"); 
                    
                    userInput = Console.ReadLine();
                   
@@ -44,24 +44,26 @@ namespace ClinicOrganization
 
                     case "2":
                         patient.PatientInfo();
-                        Console.WriteLine("Press 1 to see the Doctor, 2 to see the nurse, and 3 to go back to Main Menu\n");
+                        Console.WriteLine("Press 1 to see the Doctor, 2 to see the nurse\n");
                         userResponse = Console.ReadLine();
+                       
 
-                        if (1 == Convert.ToInt32(userResponse) )
+                       if (1 == Convert.ToInt32(userResponse) )
                         {
+                            patient.DoctorVisit();
                             Console.WriteLine("Patient's health and bloodlevel went up!");
-                           
+                            patient.PatientInfo();                          
                         }
-                         else if (2 == Convert.ToInt32(userResponse))
+                        else if (2 == Convert.ToInt32(userResponse))
                         {
+                            patient.NurseVisit();
                             Console.WriteLine("Patient's health and bloodlevel went up!");
+                            patient.PatientInfo();                           
                         }
-                          else if (userResponse = 3)
+                        else
                         {
-                            
+                            Console.WriteLine("Choose a valis option:");
                         }
-
-
                          break; 
 
                     case "3":
