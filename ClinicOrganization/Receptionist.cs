@@ -8,7 +8,7 @@ namespace ClinicOrganization
     {
         public bool OnPhone { get; set; } = true;
 
-        public Receptionist(bool OnPhone) : base("Receptionist", "Jane", 401, 45000)
+        public Receptionist(bool OnPhone) : base("Receptionist", "Jane", 401, 45000, false)
         {
             OnPhone = true;
            
@@ -16,7 +16,7 @@ namespace ClinicOrganization
 
         public void DisplayReceptionistInfo()
         {
-            Console.WriteLine(Type + "," + Name + ", employee number " + Num.ToString() + ", has a salary of " + Salary.ToString());
+            Console.WriteLine(Type + "," + Name + ", employee number " + Num.ToString() + ",\nhas a salary of " + Salary.ToString() + " and payment is " + Paid);
            
            // Console.WriteLine(Convert.ToString(OnPhone));
         }

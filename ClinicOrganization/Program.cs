@@ -62,7 +62,7 @@ namespace ClinicOrganization
                         }
                         else
                         {
-                            Console.WriteLine("Choose a valis option:");
+                            Console.WriteLine("Choose a valid option:");
                         }
                          break; 
 

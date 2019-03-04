@@ -9,7 +9,7 @@ namespace ClinicOrganization
     {
         public bool IsSweeping { get; set; } = true;
 
-        public Janitor(bool IsSweeping ) : base("Janitor", "Bob", 501, 40000)
+        public Janitor(bool IsSweeping ) : base("Janitor", "Bob", 501, 40000, false)
         {
             IsSweeping = true;
            
@@ -17,7 +17,7 @@ namespace ClinicOrganization
 
         public void DisplayJanitorInfo()
         {
-            Console.WriteLine(Type + "," + Name + ", employee number " + Num.ToString() + ", has a salary of " + Salary.ToString());         
+            Console.WriteLine(Type + "," + Name + ", employee number " + Num.ToString() + ",\nhas a salary of " + Salary.ToString() + " and payment is " + Paid);         
             //Console.WriteLine(Convert.ToString(IsSweeping));
          
         }
