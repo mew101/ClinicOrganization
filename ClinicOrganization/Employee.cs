@@ -12,7 +12,7 @@ namespace ClinicOrganization
         public int Salary { get; set; }
         public bool Paid { get; set; } = false;
         public List<Employee> Employees { get; set; }
-
+         
 
 
         public Employee(string type, string nam, int num, int sal) //bool paid)
@@ -29,8 +29,7 @@ namespace ClinicOrganization
         {
             Paid = true;
         }
-
-       
+        
 
        
     }

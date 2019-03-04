@@ -21,6 +21,7 @@ namespace ClinicOrganization
                 bool gameContinues = true;
                string userInput;
           
+          
             do
             {
                 
@@ -28,17 +29,18 @@ namespace ClinicOrganization
                     Console.WriteLine("Press 1 for list of employees and status");
                     Console.WriteLine("Press 2 for patient status");
                     Console.WriteLine("Press 3 to pay all employess");
-                    Console.WriteLine("0 to Exit");
-
+                    Console.WriteLine("0 to Exit\n");
+                   
                    userInput = Console.ReadLine();
-
+                    
                 switch (userInput)
                 {
-                    case "1":
-                        doctor.DisplayDoctorInfo();
-                        nurse.DisplayNurseInfo();
-                        receptionist.DisplayReceptionistInfo();
-                        janitor.DisplayJanitorInfo();
+                    case "1":                       
+                            doctor.DisplayDoctorInfo();
+                            nurse.DisplayNurseInfo();
+                            receptionist.DisplayReceptionistInfo();
+                            janitor.DisplayJanitorInfo();
+                        
                         break;
                     case "2":
                         patient.PatientInfo();

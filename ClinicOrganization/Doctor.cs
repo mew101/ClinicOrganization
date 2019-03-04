@@ -16,11 +16,8 @@ namespace ClinicOrganization
       
         public void DisplayDoctorInfo()
         {
-            Console.WriteLine(Specialty);
-            Console.WriteLine(Type);
-            Console.WriteLine(Name);
-            Console.WriteLine(Num.ToString());
-            Console.WriteLine(Salary.ToString()); 
+            Console.WriteLine(Specialty + "," + Type + "," + Name + ", employee number " + Num.ToString() + ", has a salary of " + Salary.ToString());
+           
         }
 
 

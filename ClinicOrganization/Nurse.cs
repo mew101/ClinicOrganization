@@ -17,12 +17,7 @@ namespace ClinicOrganization
        
         public void DisplayNurseInfo()
         {          
-            Console.WriteLine(Type);
-            Console.WriteLine(Name);
-            Console.WriteLine(Num.ToString());
-            Console.WriteLine(Salary.ToString());
-            Console.WriteLine(Patients);
-           
+            Console.WriteLine(Type + ", " + Name + ", employee number " + Num.ToString() + ", has a salary of " + Salary.ToString());  
         }
 
 

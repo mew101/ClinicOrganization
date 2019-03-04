@@ -16,11 +16,9 @@ namespace ClinicOrganization
 
         public void DisplayReceptionistInfo()
         {
-            
-            Console.WriteLine(Name);
-            Console.WriteLine(Num.ToString());
-            Console.WriteLine(Convert.ToString(OnPhone));
-            Console.WriteLine(Salary.ToString());         
+            Console.WriteLine(Type + "," + Name + ", employee number " + Num.ToString() + ", has a salary of " + Salary.ToString());
+           
+           // Console.WriteLine(Convert.ToString(OnPhone));
         }
     }
 }

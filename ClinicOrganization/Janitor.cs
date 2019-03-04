@@ -16,12 +16,10 @@ namespace ClinicOrganization
         }
 
         public void DisplayJanitorInfo()
-        {        
-            Console.WriteLine(Type);
-            Console.WriteLine(Name);
-            Console.WriteLine(Num.ToString());
-            Console.WriteLine(Convert.ToString(IsSweeping));
-            Console.WriteLine(Salary.ToString());
+        {
+            Console.WriteLine(Type + "," + Name + ", employee number " + Num.ToString() + ", has a salary of " + Salary.ToString());         
+            //Console.WriteLine(Convert.ToString(IsSweeping));
+         
         }
 
     }
