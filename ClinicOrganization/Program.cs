@@ -89,17 +89,15 @@ namespace ClinicOrganization
                     case "4":
                         if (paid == false)
                         {
-                            doctor.PayEmployee();
-                            nurse.PayEmployee();
-                            receptionist.PayEmployee();
-                            janitor.PayEmployee();
-                            Console.WriteLine("\nAll employees have been paid");
+                            paid = true;
+                            Console.WriteLine("Everyone just got paid");
+
                         }
                         else
                         {
-                            paid = true;
-                            Console.WriteLine("You can't pay twice!");
+                            Console.WriteLine("We dont more than once!");
                         }
+
                         break;
 
                     case "5":
