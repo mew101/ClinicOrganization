@@ -9,7 +9,7 @@ namespace ClinicOrganization
        
         public int Patients { get; set; }
 
-        public Nurse(int patients) : base("Nurse", "Betsy" , 301, 50000, false)
+        public Nurse(int patients) : base("Nurse", "Betsy" , 301, 50000)
         {
             Patients = 3;       
         }
@@ -17,7 +17,7 @@ namespace ClinicOrganization
        
         public void DisplayNurseInfo()
         {          
-            Console.WriteLine(Type + ", " + Name + ", employee number " + Num.ToString() + ",\nhas a salary of " + Salary.ToString() + " and payment is " + Paid);  
+            Console.WriteLine(Type + ", " + Name + ", employee number " + Num.ToString() + ", has a salary of " + Salary.ToString());  
         }
 
 

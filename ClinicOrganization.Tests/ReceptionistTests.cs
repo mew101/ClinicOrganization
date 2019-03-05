@@ -10,10 +10,10 @@ namespace ClinicOrganization.Tests
         [Fact]
         public void Receptionist_Info()
         {
-            Receptionist receptionist = new Receptionist(true);
-            // Assert.Equal(401, receptionist.Num);
-            // Assert.Equal(45000, receptionist.Salary);
-            //Assert.Equal("Jane", receptionist.Name);
+            Receptionist receptionist = new Receptionist();
+            Assert.Equal(401, receptionist.Num);
+            Assert.Equal(45000, receptionist.Salary);
+            Assert.Equal("Jane", receptionist.Name);
             Assert.True(receptionist.OnPhone);
         }
     }

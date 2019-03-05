@@ -7,20 +7,30 @@ namespace ClinicOrganization
 {
     public class Janitor : Employee
     {
-        public bool IsSweeping { get; set; } = true;
+        public bool Sweeping { get; set; } = true;
 
-        public Janitor(bool IsSweeping ) : base("Janitor", "Bob", 501, 40000, false)
+        public Janitor() : base("Janitor", "Bob", 501, 40000)
         {
-            IsSweeping = true;
-           
+            
         }
 
         public void DisplayJanitorInfo()
         {
-            Console.WriteLine(Type + "," + Name + ", employee number " + Num.ToString() + ",\nhas a salary of " + Salary.ToString() + " and payment is " + Paid);         
-            //Console.WriteLine(Convert.ToString(IsSweeping));
-         
+            Console.WriteLine(Type + "," + Name + ", employee number " + Num.ToString() + ", has a salary of " + Salary.ToString());
         }
+        public void Sweep()
+        {
+            if (Sweeping == false)
+            {
+                Sweeping = true; Console.WriteLine("Janitor is now sweeping");
 
+            }
+            else
+            {
+                Sweeping = false; Console.WriteLine("Janitor is done sweeping");
+
+            }
+
+        }
     }
 }

@@ -10,11 +10,11 @@ namespace ClinicOrganization.Tests
         [Fact]
         public void Janitor_Info()
         {
-            Janitor janitor = new Janitor(true);
-            //Assert.Equal(40000, janitor.Salary);
-            //Assert.Equal(501, janitor.Num);
-            //Assert.Equal("Bob", janitor.Name);
-            Assert.True(janitor.IsSweeping);
+            Janitor janitor = new Janitor();
+            Assert.Equal(40000, janitor.Salary);
+            Assert.Equal(501, janitor.Num);
+            Assert.Equal("Bob", janitor.Name);
+            Assert.True(janitor.Sweeping);
         }
     }
 }

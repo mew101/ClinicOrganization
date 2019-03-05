@@ -15,26 +15,19 @@ namespace ClinicOrganization
          
 
 
-        public Employee(string type, string nam, int num, int sal, bool paid)
+        public Employee(string type, string nam, int num, int sal)
         {
             Type = type;
             Name = nam;
             Num = num;
             Salary = sal;
-            Paid = paid;
+            
 
         }
 
         public void PayEmployee()
-        {
-            if (Paid == false)
-            {
+        {          
                 Paid = true;
-            }
-            else
-            {
-                Console.WriteLine("Employees have already been paid");
-            }
         }
         
 

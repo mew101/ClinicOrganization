@@ -24,11 +24,13 @@ namespace ClinicOrganization
         {
             BloodLevel += 20;
             HealthLevel += 10;
+            Console.WriteLine("Patient's health and bloodlevel went up!");
         }
         public void NurseVisit()
         {
             BloodLevel += 10;
             HealthLevel += 5;
+            Console.WriteLine("Patient's health and bloodlevel went up!");
         }
         public void PatientInfo()
         {
