@@ -22,7 +22,7 @@ namespace ClinicOrganization
 
                 string userInput;
                 string userResponse;
-                userInput = Console.ReadLine();
+                //userInput = Console.ReadLine();
                 bool gameContinues = true;
                 bool paid = false; 
             do
@@ -53,12 +53,12 @@ namespace ClinicOrganization
 
                        if (1 == Convert.ToInt32(userResponse) )
                         {
-                            patient.DoctorVisit();                        
+                            doctor.DrawBlood(patient);                        
                             patient.PatientInfo();                          
                         }
                         else if (2 == Convert.ToInt32(userResponse))
                         {
-                            patient.NurseVisit();
+                            nurse.DrawBlood(patient);
                             patient.PatientInfo();                           
                         }
                         else

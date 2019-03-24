@@ -21,17 +21,18 @@ namespace ClinicOrganization
             Name = nam;
             Num = num;
             Salary = sal;
-            
-
         }
 
         public void PayEmployee()
         {          
                 Paid = true;
         }
-        
 
-       
+        public virtual void DrawBlood(Patient patient)
+        {
+           
+        }
+
     }
 
 }

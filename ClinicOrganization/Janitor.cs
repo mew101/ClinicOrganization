@@ -30,7 +30,6 @@ namespace ClinicOrganization
                 Sweeping = false; Console.WriteLine("Janitor is done sweeping");
 
             }
-
         }
     }
 }

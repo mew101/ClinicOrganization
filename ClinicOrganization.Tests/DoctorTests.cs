@@ -10,7 +10,7 @@ namespace ClinicOrganization.Tests
         [Fact]
         public void DocInfo()
         {
-            Doctor doctor = new Doctor("Internist");
+            Visit doctor = new Visit("Internist");
             Assert.Equal("Internist", doctor.Specialty);
             Assert.Equal(201, doctor.Num);
             Assert.Equal(90000, doctor.Salary);

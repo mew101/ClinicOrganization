@@ -12,14 +12,19 @@ namespace ClinicOrganization
         {
             Specialty = "Internist";            
         }
-
-      
+     
         public void DisplayDoctorInfo()
         {
             Console.WriteLine(Specialty + "," + Type + "," + Name + ", employee number " + Num.ToString() + ", has a salary of " + Salary.ToString());
            
         }
 
+        public override void DrawBlood(Patient patient)
+        {
+            patient.BloodLevel += 20;
+            patient.HealthLevel += 10;
+            Console.WriteLine("Patient's health and bloodlevel went up!");
+        }
 
 
     }
